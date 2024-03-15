@@ -2,9 +2,12 @@
 $user_text = $_GET['user-text'];
 $censure_text = $_GET['censure-text'];
 $lenght_user_text = strlen($user_text);
+$lenght_censure_text = strlen($censure_text);
 
 // Censura la parola nel testo dell'utente
 $user_text_censored = str_ireplace($censure_text, '***', $user_text);
+$lenght_user_text_censored = strlen($user_text_censored);
+
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -22,7 +25,9 @@ $user_text_censored = str_ireplace($censure_text, '***', $user_text);
             <p>
                 <span class="fw-bold ">User Text:</span> <?php echo $user_text_censored ?> <br>
                 <span class="fw-bold">Censure Text:</span> <?php echo $censure_text ?> <br>
-                <span class="fw-bold">Lenght User Text:</span> <?php echo $lenght_user_text ?> 
+                <span class="fw-bold">Length User Text:</span> <?php echo $lenght_user_text ?> <br>
+                <span class="fw-bold">Length Censured Text:</span> <?php echo $lenght_censure_text ?> <br>
+                <span class="fw-bold">Length Censured User Text:</span> <?php echo $lenght_user_text_censored ?>
             </p>
 
         </div>
