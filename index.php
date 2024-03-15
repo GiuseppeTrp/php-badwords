@@ -18,7 +18,7 @@
                     <div class="col-4 p-2">
                      <label for="paragraph" class="p-1">Testo:</label>
 
-                     <textarea class="form-control" id="paragraph" name="paragraph" rows="5" required></textarea>
+                     <textarea class="form-control" id="paragraph" name="user-text" rows="5" required></textarea>
 
 
                     </div>
@@ -30,7 +30,7 @@
                 <div class=" m-3  p-2 d-flex  justify-content-center ">
                     <div class="col-4 p-2 ">
                         <label for="word" class="p-1">Testo da censurare:</label>
-                        <input type="text" class="form-control" id="word" name="word" required>
+                        <input type="text" class="form-control" id="word" name="censure-text" required>
                     </div>
                 </div> 
                
